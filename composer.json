@@ -1,0 +1,22 @@
+{
+  "name": "maris/tollroad-interfaces",
+  "description": "Пакет добавляет возможность сохранения терминалов платных дорог.",
+  "license": "MIT",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Марисов Николай Андреевич",
+      "email": "marisov123456789@mail.ru"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "maris/geo-interfaces": "*"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Maris\\Interfaces\\TollRoad\\": "src/"
+    }
+  }
+}

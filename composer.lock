@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0bfe843e19f6feacd0a4b61608d05b48",
+    "packages": [
+        {
+            "name": "maris/geo-interfaces",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/n-marisov/geo-interfaces.git",
+                "reference": "95a00115ba3438409e9303206929da42bdd0a5da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/n-marisov/geo-interfaces/zipball/95a00115ba3438409e9303206929da42bdd0a5da",
+                "reference": "95a00115ba3438409e9303206929da42bdd0a5da",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Maris\\Interfaces\\Geo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Марисов Николай Андреевич",
+                    "email": "marisov123456789@mail.ru"
+                }
+            ],
+            "description": "Набор интерфейсов для географических сервисов.",
+            "support": {
+                "issues": "https://github.com/n-marisov/geo-interfaces/issues",
+                "source": "https://github.com/n-marisov/geo-interfaces/tree/v1.0.0"
+            },
+            "time": "2023-08-19T10:01:23+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
