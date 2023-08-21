@@ -8,10 +8,9 @@ use Maris\Interfaces\TollRoad\TollRoadServiceInterface;
 
 /***
  * Интерфейс терминала оплаты платной дороги.
- * Method getLocation() Возвращает локацию терминала оплаты.
- * Method getPolyline() Возвращает участок дороги за который взимается плата.
+ * Method getGeometry() Возвращает локацию терминала оплаты.
  */
-interface TollRoadTerminalInterface extends LocationAggregateInterface, PolylineAggregateInterface
+interface TollRoadTerminalInterface extends LocationAggregateInterface
 {
     /**
      * Возвращает родительский терминал.
