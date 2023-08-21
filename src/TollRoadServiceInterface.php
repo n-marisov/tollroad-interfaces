@@ -19,7 +19,6 @@ interface TollRoadServiceInterface
      */
     public function intersection( TollRoadTerminalInterface $terminal, PolylineInterface|PolylineAggregateInterface $polyline ):bool;
 
-
     /***
      * Вычисляет группу для оплаты проезда
      * используя габариты автомобиля и количество осей.
@@ -27,5 +26,12 @@ interface TollRoadServiceInterface
      * @param int $axios
      * @return int
      */
-    public static function calculateGroup( float $height, int $axios = 2 ):int;
+    public function calculateGroup( float $height, int $axios = 2 ):int;
+
+    /***
+     * Фильтрует терминалы, оставляя только те за которые взимается плата.
+     * @param array<TollRoadTerminalInterface> $terminals
+     * @return array<TollRoadTerminalInterface>
+     */
+    public function filteredPriceTerminals( array $terminals ):array;
 }

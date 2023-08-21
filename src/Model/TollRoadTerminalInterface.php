@@ -4,14 +4,23 @@ namespace Maris\Interfaces\TollRoad\Model;
 
 use Maris\Interfaces\Geo\Aggregate\LocationAggregateInterface;
 use Maris\Interfaces\Geo\Aggregate\PolylineAggregateInterface;
+use Maris\Interfaces\TollRoad\TollRoadServiceInterface;
 
 /***
  * Интерфейс терминала оплаты платной дороги.
- * @method getLocation() Возвращает локацию терминала оплаты.
- * @method getPolyline() Возвращает участок дороги за который взимается плата.
+ * Method getLocation() Возвращает локацию терминала оплаты.
+ * Method getPolyline() Возвращает участок дороги за который взимается плата.
  */
 interface TollRoadTerminalInterface extends LocationAggregateInterface, PolylineAggregateInterface
 {
+    /**
+     * Возвращает родительский терминал.
+     * Если участок проходит через родителя,
+     * то оплаты за текущий терминал не взимается.
+     * @return TollRoadServiceInterface|null
+     */
+    public function getParent():?TollRoadServiceInterface;
+
     /***
      * Возвращает название терминала.
      * @return string
