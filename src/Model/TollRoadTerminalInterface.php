@@ -24,6 +24,30 @@ interface TollRoadTerminalInterface extends LocationAggregateInterface, Polyline
      */
     public function getDescription():string;
 
+    /***
+     * Возвращает название трассы на которой расположен терминал.
+     * @return string
+     */
+    public function getTrackName():string;
+
+    /***
+     * Метка (км) трассы на котором начинается участок платной дороги.
+     * @return int
+     */
+    public function getTrackStartMarker():int;
+
+    /***
+     * Метка (км) трассы на котором заканчивается участок платной дороги.
+     * @return int
+     */
+    public function getTrackEndMarker():int;
+
+    /***
+     * Метка (км) трассы в котором расположен терминал оплаты.
+     * @return int
+     */
+    public function getTrackTerminalMarker():int;
+
     /**
      * Возвращает начальный азимут в направлении
      * движения от локации терминала.
