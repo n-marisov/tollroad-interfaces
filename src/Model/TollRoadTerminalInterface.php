@@ -4,6 +4,7 @@ namespace Maris\Interfaces\TollRoad\Model;
 
 use Maris\Interfaces\Geo\Aggregate\LocationAggregateInterface;
 use Maris\Interfaces\Geo\Aggregate\PolylineAggregateInterface;
+use Maris\Interfaces\Geo\Model\LocationInterface;
 use Maris\Interfaces\TollRoad\TollRoadServiceInterface;
 
 /***
@@ -82,4 +83,11 @@ interface TollRoadTerminalInterface extends LocationAggregateInterface
      * @return TollRoadPriceBlockInterface|null
      */
     public function findPriceBlock( callable $predicate ):?TollRoadPriceBlockInterface;
+
+    /**
+     * Возвращает координаты терминала.
+     * @return LocationInterface
+     */
+    public function getGeometry(): LocationInterface;
+
 }
